@@ -1,0 +1,17 @@
+name = etype
+description = Entity type, bundle, and view
+core = 7.x
+package = Features
+version = 7.x-0.1
+project = fprefix_etype
+dependencies[] = eck
+dependencies[] = eck
+dependencies[] = entity
+dependencies[] = features
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[eck_bundle][] = etype_etype
+features[eck_entity_type][] = etype
+features[features_api][] = api:2
+features[views_view][] = etype
+features_exclude[dependencies][ctools] = ctools
